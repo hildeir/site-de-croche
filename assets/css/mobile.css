@@ -1,0 +1,129 @@
+@media (max-width: 412px) {
+    /****** header *******/
+    .vector-topo-2-back{
+        bottom: -2px;
+    }
+    .topo-2{
+        height: 450px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav a{
+        margin-right: 0;
+    }
+    .nav a:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .conteiner-topo-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .bloco-1{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-frase-topo-2{
+        text-align: center;
+    }
+    .text-topo-2{
+        text-align: center;
+    }
+    /********* galeria ********/
+    .conteiner-galeria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteiner-text-galeria{
+        margin-top: 100px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /******** carrosseis ********/
+    .conf{
+        --width-carrossel: 370px;
+    }
+    .conf-galeria{
+        --width-galeria-carrossel: 370px;
+        --height-galeria-carrossel: 450px;
+    }
+    /******** quem sou *****************/
+    .conteiner-quem-sou{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-quem-sou{
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        flex-basis: 300px;
+    }
+    .card-foto{
+        display: none;
+    }
+    /******** encomendar **********/
+    .conteiner-encomendar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .text-encomendar{
+        margin: 0;
+        font-size: 20px;
+        flex-basis: 200px;
+    }
+    /******** footer *********/
+    .conteiner-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 50px;
+    }
+}
+@media (min-width: 810px) and (max-width: 811px){
+    /***** quem sou eu *******/
+    .text-quem-sou{
+        font-size: 20px;
+    }
+    .conteiner-quem-sou{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .card-foto{
+        display: none;
+    }
+    /******** encomendar *******/
+    .text-encomendar{
+        font-size: 20px;
+    }
+    .conteiner-encomendar{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    /**** header ***/
+    .topo-2{
+        height: 600px;
+    }
+    .nav a:last-child{
+        margin-right: 0;
+    }
+    /******* carrossel ******/
+    .conf-galeria{
+        --width-galeria-carrossel: 700px;
+        --height-galeria-carrossel: 750px;
+    }
+    /******* fim *****/
+}

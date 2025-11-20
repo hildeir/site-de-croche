@@ -1,0 +1,55 @@
+.conf{
+    --width-carrossel: 400px;
+}
+.carrossel-legenda-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.carrossel-window{
+    width: var(--width-carrossel);
+    height: 500px;
+    display: flex;
+    position: relative;
+    left: 0;
+}
+.carrossel{
+    display: flex;
+    flex-direction: column;
+    width: var(--width-carrossel);
+    overflow-x: hidden;
+}
+.carrossel-item{
+    flex-basis: var(--width-carrossel);
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.carrossel-item img{
+    width: var(--width-carrossel);
+    height: 100%;
+}
+.legenda{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.item-legenda{
+    background-color: #AADA62;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+.active-item-legenda{
+    background-color: #4B6328;
+}
+.btn-left, .btn-right{
+    cursor: pointer;
+}
+.btn-left img, .btn-right img{
+    width: 40px;
+    height: 40px;
+}
+.conteiner-btns{
+    display: flex;
+    gap: 3px;
+}

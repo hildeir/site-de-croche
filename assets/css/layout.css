@@ -1,0 +1,284 @@
+@font-face{
+    font-family: 'Aboreto';
+    src: url('../Aboreto/Aboreto-Regular.ttf');
+}
+*{
+    font-family:'Aboreto',Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+.topo-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EFF1EC;
+}
+.logo{
+    padding-top: 79px;
+    padding-bottom: 79px;
+}
+.nav{
+    padding-bottom: 66px;
+}
+.nav a{
+    color: #151F08;
+    text-decoration: none;
+    font-size: 26px;
+    margin-right: 126px;
+}
+.bloco-1{
+    background-color: #69883B;  
+    padding: 66px; 
+    flex-basis: 700px;
+}
+.bloco-2{
+    background-image: url("../imagens/imagem-topo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.conteiner-topo-2{
+    display: flex;
+    height: 100%;
+}
+.titulo-frase-topo-2{
+    color: #EFF1EC;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.topo-2{
+    position: relative;
+    height: 500px;
+}
+.text-topo-2{
+    color: #EFF1EC;
+    font-size: 22px;
+    padding-bottom: 40px;
+}
+.btn-encomendar-topo-2{
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 33px;
+    padding-right: 33px;
+    font-size: 24px;
+    color: #000;
+    background-color: #DACE62;
+    border: none;
+}
+.conteiner-btn-encomendar-topo2{
+    z-index: 1000;
+}
+.btn-encomendar-topo-2 a{
+    text-decoration: none;
+    color: #000;
+}
+.btn-encomendar-topo-2:hover{
+    cursor: pointer;
+    background-color: #f8eb71;
+}
+.vector-topo-2{
+    position: absolute;
+    bottom: -6px;
+    z-index: 100;
+}
+/******* galeria ******/
+.conteiner-text-galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px;
+}
+.conteiner-galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-galeria{
+    position: relative;
+    background-color: #EFF1EC;
+    padding-top: 140px;
+    padding-bottom: 170px;
+}
+.text-galeria{
+    text-align: center;
+    font-size: 22px;
+}
+.btn-galeria{
+    background-color: #69883B;
+    color: #EFF1EC;
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 20px;
+    margin-top: 35px;;
+}
+.btn-galeria:hover{
+    background-color: #93bb57;
+    cursor: pointer;
+}
+.vetor-galeria{
+    position: absolute;
+    bottom: -5px;
+}
+/****** quem sou *****/
+.titulo-quem-sou{
+    color: #69883B;
+    text-align: center;
+    margin-top: 0;
+}
+.quem-sou{
+    background-color: #C9CCC5;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 150px;
+}
+.foto-quem-sou img{
+    width: 290px;
+    height: 380px;
+}
+.foto-quem-sou{
+    position: relative;
+    z-index: 100;
+}
+.conteiner-quem-sou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-quem-sou{
+    word-break: break-all;
+    margin-right: 60px;
+    font-size: 25px;
+    flex-basis: 600px;
+    color: #3F3B17;
+}
+.card-foto{
+    width: 290px;
+    height: 380px;
+    position: absolute;
+    transform: rotate(10deg);
+    background-color: #BDFAB8;
+    top: 25px;
+    left: 60px;
+    z-index: -1;
+    box-shadow: #000 5px 5px 20px;
+}
+.vetor-quem-sou{
+    position: absolute;
+    bottom: -6px;
+}
+/*********** encomendar **********/
+.conteiner-encomendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-encomendar{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-color: #FCF3AD;
+    position: relative;
+}
+.btn-encomendar{
+    background-color: #2C5F27;
+    color: #E2E2E2;
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 20px;
+}
+.btn-encomendar:hover{
+    background-color: #4e9947;
+    cursor: pointer;
+}
+.btn-encomendar a{
+    text-decoration: none;
+    color: #E2E2E2;
+}
+.text-encomendar{
+    flex-basis: 700px;
+    font-size: 25px;
+    word-break: break-all;
+    margin-right: 60px;
+    color: #193B15;
+}
+.vetor-encomendar{
+    position: absolute;
+    bottom: -6px;
+}
+/************** footer ******************/
+footer{
+    background-color: #69883B;
+}
+.conteiner-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.conteiner-telefone-icon-footer{
+    display: flex;
+}
+.conteiner-telefone-icon-footer img{
+    width: 36px;
+    height: 36px;
+}
+.telefone-footer{
+    font-size: 34px;
+    color: #EFF1EC;
+    margin-left: 10px;
+}
+.conteiner-icons-redes-sociais img{
+    padding: 5px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+/********** vetores *******/
+.vetor-galeria-back{
+    height: 180px;
+    background-image: url("../imagens/vector/vector-galeria.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+}
+.vetor-quem-sou-back{
+    height: 180px;
+    background-image: url("../imagens/vector/vector-encomendar.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+}
+.vetor-encomendar-back{
+    height: 180px;
+    background-image: url("../imagens/vector/vector-footer.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+}
+.vector-topo-2-back{
+    height: 180px;
+    background-image: url("../imagens/vector/vector-header.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+}
