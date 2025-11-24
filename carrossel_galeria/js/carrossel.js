@@ -18,6 +18,7 @@ export default class Carrossel{
         this.animation_automatic = true;
         this.walk = 0;
         this.id = 0;
+        this.screen_mobile = 811;
         this.buildLegenda();
     }
     start(){
@@ -25,18 +26,35 @@ export default class Carrossel{
         const state_animation = document.querySelector(".galeria-carrossel-window");
         const btn_left = document.querySelector(".galeria-btn-left");
         const btn_right = document.querySelector(".galeria-btn-right");
-        state_animation.addEventListener("mouseenter",function(){
-            if(self.animation_automatic){
-                self.animation_automatic = false;
-                clearInterval(self.id);
-            }else{
-                self.animation_automatic = true;
-                clearInterval(self.id);
-                setTimeout(()=>{
-                    self.id = setInterval(runAnitmation.bind(self),10);
-                });
-            }
-        });
+        const screen = window.innerWidth;
+        if(screen <= this.screen_mobile){
+            //mobile
+            state_animation.addEventListener("click",function(){
+                 if(self.animation_automatic){
+                    self.animation_automatic = false;
+                    clearInterval(self.id);
+                }else{
+                    self.animation_automatic = true;
+                    clearInterval(self.id);
+                    setTimeout(()=>{
+                        self.id = setInterval(runAnitmation.bind(self),10);
+                    });
+                }
+            });
+        }else{
+            state_animation.addEventListener("mouseenter",function(){
+                if(self.animation_automatic){
+                    self.animation_automatic = false;
+                    clearInterval(self.id);
+                }else{
+                    self.animation_automatic = true;
+                    clearInterval(self.id);
+                    setTimeout(()=>{
+                        self.id = setInterval(runAnitmation.bind(self),10);
+                    });
+                }
+            });
+        }
         
         btn_left.addEventListener("click",function(){
             if(self.animation_automatic == false){
