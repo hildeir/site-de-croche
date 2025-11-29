@@ -282,3 +282,18 @@ footer{
     bottom: -6px;
     width: 100%;
 }
+/********** develped by **************/
+.developed-by img{
+    width: 100px;
+    height: auto;
+}
+.developed-by{
+    color: #E2E2E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.developed-by a{
+    margin-left: 10px;
+}
